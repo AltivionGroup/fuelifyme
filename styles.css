@@ -31,6 +31,37 @@ nav a {
   text-align: center; padding: 1rem;
   font-size: 1.1rem;
 }
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  background: #f2f2f2;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.service-areas {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.1rem;
+  background: #fff;
+}
+
 .how-it-works {
   background: white; padding: 2rem; text-align: center;
 }
