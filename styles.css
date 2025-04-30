@@ -32,6 +32,61 @@ nav a {
   font-size: 1.1rem;
 }
 
+/* -- Pricing -- */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  background: #f2f2f2;
+}
+
+.price-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.price-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.price-card h2 {
+  margin-bottom: 0.5rem;
+  color: #003366;
+}
+
+.price-card .price {
+  font-size: 1.5rem;
+  color: #FF6600;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.price-card ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.price-card ul li {
+  padding: 0.5rem 0;
+  border-top: 1px solid #e0e0e0;
+}
+
+.promo-note {
+  background: #003366;
+  color: #66CC33;
+  text-align: center;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+/* -- Services -- */
 .service-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
